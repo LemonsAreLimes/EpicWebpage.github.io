@@ -1,0 +1,40 @@
+.loadingPage {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(36, 35, 35);
+
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    z-index: 1000;
+
+    text-align: center;
+}
+
+@keyframes PageOpen {
+    0% {width: 100vw;}
+    100% {width: 0vw;}
+}
+
+.loadingPageAnimOpen {
+    height: 100vh;
+    width: 0vw;
+    background-color: rgb(36, 35, 35);
+
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    z-index: 1000;
+
+    text-align: center;
+
+    animation-name: PageOpen;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(1,.54,0,1);
+}
+
+
+
+.loadingText{
+    color: white;
+}
