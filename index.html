@@ -8,13 +8,17 @@
         <link rel="stylesheet" href="src/content.css">
         <link rel="stylesheet" href="src/pageOpen.css">
         <script src="src/MenuBar.js"></script>
-        <title>projects</title>
+        <title>Home page</title>
+        <script>
+            window.onload = LoadPage();
+        </script>
     </head>
     <body>
         <div id="loadingPage" class="loadingPage">
-            <h1 id="loadingText" class="loadingText">loading</h1>
+            <h1 id="loadtext" class="loadingText"></h1>
         </div>
         <div class="MenuBar" id="menu" onmouseenter="OpenMenu()" onmouseleave="CloseMenu()">
+            <p id="homeIcon" class="MenuItem">📜</p>
             <p id="projectsIcon" class="MenuItem">🖥️</p>
             <p id="aboutmeIcon" class="MenuItem">📁</p>
         </div>
@@ -23,7 +27,11 @@
                 <h1 class="titleText">What is this place?</h1>
             </div>
             <div class="LargeContentBox">
-                <h1 class="ContentTitle">this is a test site</h1>
+                <h1 class="ContentTitle">this is a test project</h1>
+                <p class="desc">i havent used html / css in quite a while</p>
+                <p class="desc">currentlly this is a static site</p>
+                <p class="desc">however, i have the server all coded up</p>
+                <p class="desc">i just need to finish this site</p>
             </div>
         </div>
     </body>
