@@ -54,6 +54,20 @@
     animation-duration: 500ms;
 }
 
+@keyframes TextHoverAnim{
+    0% {color: #33FF55;}
+    50% {color: #FFFF4D;}
+    100% {color: #33FF55;}
+}
+
+.MenuOpenText:hover{
+    border-bottom: 2px solid white;
+
+    animation-name: TextHoverAnim;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
 
 @keyframes TextClose {
     0% {opacity: 100%;}
